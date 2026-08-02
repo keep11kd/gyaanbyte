@@ -1,36 +1,344 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚀 GyaanByte
 
-## Getting Started
+> Learn. Build. Succeed.
 
-First, run the development server:
+GyaanByte is a technology startup focused on delivering high-quality software solutions, academic projects, professional training, and business software.
+
+---
+
+# 🌐 Vision
+
+To become one of India's leading EdTech & Software Solution companies by providing:
+
+- 🎓 Academic Projects
+- 💻 Website Development
+- 🤖 AI Solutions
+- 📱 Software Development
+- ☕ Java Training
+- 🐍 Python Training
+- 🌐 Web Development
+- 📄 Documentation & Viva Support
+
+---
+
+# 📌 Current Project
+
+This repository contains the official source code for the **GyaanByte Website**.
+
+Status:
+
+🟢 Under Development
+
+Version:
+
+v1.0.0
+
+---
+
+# 🛠 Tech Stack
+
+## Frontend
+
+- Next.js 16
+- React 19
+- TypeScript
+- Tailwind CSS v4
+- shadcn/ui
+- Lucide Icons
+- Framer Motion (Planned)
+
+## Backend
+
+- Spring Boot
+- Spring Security
+- JWT
+- PostgreSQL
+- JPA / Hibernate
+
+## DevOps
+
+- GitHub
+- Docker
+- GitHub Actions (Planned)
+
+---
+
+# 📂 Repository Structure
+
+```text
+gyaanbyte/
+
+frontend/
+backend/
+database/
+docs/
+docker/
+scripts/
+assets/
+```
+
+---
+
+# 🏗 Frontend Structure
+
+```text
+frontend/
+
+app/
+components/
+features/
+hooks/
+lib/
+providers/
+services/
+store/
+types/
+utils/
+constants/
+config/
+styles/
+public/
+```
+
+---
+
+# 📈 Development Progress
+
+## Phase 0
+
+- [x] Repository Created
+- [x] GitHub Connected
+- [x] Git Workflow
+- [x] Monorepo Setup
+
+---
+
+## Phase 1
+
+### Frontend Foundation
+
+- [x] Next.js 16
+- [x] TypeScript
+- [x] Tailwind CSS
+- [x] ESLint
+- [x] Prettier
+- [x] Project Structure
+- [x] Constants
+- [x] Utility Functions
+
+---
+
+### Layout
+
+- [x] Container
+- [x] Section
+- [x] Logo
+- [x] Navbar (Initial)
+- [x] Footer (Initial)
+
+---
+
+### Home
+
+- [x] HomePageView
+- [ ] Hero
+- [ ] Stats
+- [ ] Services
+- [ ] Projects
+- [ ] Testimonials
+- [ ] FAQ
+- [ ] CTA
+
+---
+
+# 🎯 Roadmap
+
+## Sprint 1
+
+✅ Foundation
+
+## Sprint 2
+
+🔄 Layout
+
+## Sprint 3
+
+⬜ Homepage
+
+## Sprint 4
+
+⬜ Services
+
+## Sprint 5
+
+⬜ Projects
+
+## Sprint 6
+
+⬜ Blog
+
+## Sprint 7
+
+⬜ Contact
+
+## Sprint 8
+
+⬜ Authentication
+
+## Sprint 9
+
+⬜ Admin Dashboard
+
+---
+
+# 🏛 Architecture
+
+Feature First Architecture
+
+```text
+App Router
+
+↓
+
+Home Feature
+
+↓
+
+Components
+
+↓
+
+Services
+
+↓
+
+API
+
+↓
+
+Backend
+```
+
+---
+
+# 🌍 Theme
+
+Light Premium UI
+
+Inspired by:
+
+- Apple
+- Stripe
+- Linear
+- Vercel
+
+Primary Color
+
+🟢 Lime Green
+
+Secondary
+
+⚫ Dark Navy
+
+---
+
+# 📋 Git Workflow
+
+```text
+main
+
+↓
+
+develop
+
+↓
+
+feature/*
+```
+
+Never commit directly to **main**.
+
+---
+
+# 🚀 Local Development
+
+Install dependencies
+
+```bash
+npm install
+```
+
+Run
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Type Check
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+npm run type-check
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Lint
 
-## Learn More
+```bash
+npm run lint
+```
 
-To learn more about Next.js, take a look at the following resources:
+Format
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+npm run format
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+# 📊 Current Progress
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Repository Progress
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+███████░░░░░░░░░░░ 35%
+
+Frontend
+
+██████████░░░░░░░ 45%
+
+Backend
+
+░░░░░░░░░░░░░░░░░ 0%
+
+Deployment
+
+░░░░░░░░░░░░░░░░░ 0%
+
+---
+
+# 👨‍💻 Team
+
+### Abdul Bari
+
+Software Engineer
+
+Project Lead
+
+---
+
+### Roshan Thakur
+
+Project Consultant
+
+---
+
+### Shivam
+
+Project Consultant
+
+---
+
+# 📜 License
+
+Private Repository
+
+© GyaanByte
+All Rights Reserved.
