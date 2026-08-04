@@ -1,6 +1,6 @@
 import type { ProjectsContent } from "../types/project.types";
 import { PROJECT_CATEGORIES } from "../types";
-import { projects } from "../projects";
+import { projects } from "./projects";
 
 export const projectsContent: ProjectsContent = {
   badge: {
