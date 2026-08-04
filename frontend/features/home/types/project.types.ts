@@ -23,6 +23,10 @@ export type ProjectClient =
   | "Enterprise"
   | "Government";
 
+  export interface FAQItem {
+  question: string;
+  answer: string;
+}
 export interface Project {
   /** Unique identifier */
   id: string;
@@ -73,6 +77,37 @@ export interface Project {
 
   /** GitHub / Docs */
   docsUrl?: string;
+
+  /* ===========================================================
+   Project Details Page
+   =========================================================== */
+
+/** Detailed overview shown on project details page */
+overview?: string;
+
+/** Main modules/features included in the project */
+features?: readonly string[];
+
+/** Step-by-step project workflow */
+workflow?: readonly string[];
+
+/** Skills students will learn */
+learningOutcomes?: readonly string[];
+
+/** Knowledge required before starting */
+prerequisites?: readonly string[];
+
+/** Industries or domains where the project applies */
+useCases?: readonly string[];
+
+/** Project screenshots */
+screenshots?: readonly string[];
+
+/** Frequently Asked Questions */
+faqs?: readonly {
+  question: string;
+  answer: string;
+}[];
 }
 
 export interface ProjectsAction {

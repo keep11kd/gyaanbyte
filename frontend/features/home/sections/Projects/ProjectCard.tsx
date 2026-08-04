@@ -39,7 +39,7 @@ export default function ProjectCard({
   } = project;
   return (
     <Link
-     href={`/projects/${id}`}
+     href={`/request-project?project=${project.id}`}
       className={cn(
   "group relative flex h-full flex-col overflow-hidden rounded-3xl border border-slate-200/90 bg-white shadow-sm transition-all duration-500 ease-out hover:-translate-y-3 hover:scale-[1.015] hover:border-lime-400/60 hover:shadow-[0_30px_80px_rgba(132,204,22,0.15)]",
         className
@@ -164,7 +164,7 @@ className="rounded-full border border-slate-200 bg-slate-50 px-2.5 py-0.5 text-x
         {/* Card Footer Call to Action */}
         <div className="mt-auto flex items-center justify-between pt-6 text-sm font-semibold text-slate-900">
           <span className="transition-colors duration-300 group-hover:text-lime-600">
-            Explore Project →
+            Get This Project →
           </span>
           <div className="rounded-full bg-slate-100 p-2 text-slate-600 group-hover:bg-lime-500 group-hover:text-slate-950 transition-all duration-300 group-hover:scale-105">
             <ArrowUpRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1 group-hover:rotate-12 group-hover:-translate-y-0.5" />
