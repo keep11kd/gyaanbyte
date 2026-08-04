@@ -1,14 +1,21 @@
+import { cn } from "@/lib/utils";
 import { heroContent } from "../../data/home.data";
 import TechBadge from "./HeroIllustration/TechBadge";
 
-export default function HeroTechStack() {
+interface HeroTechStackProps {
+  className?: string;
+}
+
+export default function HeroTechStack({ className }: HeroTechStackProps) {
   return (
-    <div className="mt-12">
-      <p className="mb-4 text-sm font-semibold uppercase tracking-wider text-slate-500">
+    <div className={cn("space-y-3 pt-2", className)}>
+      {/* Label Header */}
+      <p className="text-xs font-semibold uppercase tracking-wider text-slate-400">
         Technologies We Work With
       </p>
 
-      <div className="flex flex-wrap gap-3">
+      {/* Badges Container */}
+      <div className="flex flex-wrap gap-2 sm:gap-2.5">
         {heroContent.technologies.map((tech) => (
           <TechBadge key={tech} label={tech} />
         ))}

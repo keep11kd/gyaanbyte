@@ -1,19 +1,24 @@
+import { cn } from "@/lib/utils";
 import { heroContent } from "../../data/home.data";
 
-export default function HeroContent() {
+interface HeroContentProps {
+  className?: string;
+}
+
+export default function HeroContent({ className }: HeroContentProps) {
   return (
-    <div className="mt-8 max-w-3xl">
-      <h1 className="text-5xl font-extrabold leading-tight tracking-tight text-slate-900 lg:text-7xl">
-        {heroContent.heading.line1}
-        <br />
-        {heroContent.heading.line2}
-        <br />
-        <span className="text-lime-600">
+    <div className={cn("space-y-4", className)}>
+      {/* Hero Heading */}
+      <h1 className="text-4xl font-extrabold tracking-tight text-slate-900 sm:text-5xl sm:leading-[1.15] lg:text-6xl">
+        {heroContent.heading.line1}{" "}
+        <span className="block">{heroContent.heading.line2}</span>
+        <span className="bg-gradient-to-r from-lime-600 via-lime-500 to-emerald-600 bg-clip-text text-transparent">
           {heroContent.heading.highlight}
         </span>
       </h1>
 
-      <p className="mt-8 max-w-2xl text-lg leading-8 text-slate-600">
+      {/* Hero Description */}
+      <p className="text-base leading-relaxed text-slate-600 sm:text-lg">
         {heroContent.description}
       </p>
     </div>
