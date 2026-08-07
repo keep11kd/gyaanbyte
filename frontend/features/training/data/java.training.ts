@@ -4,22 +4,14 @@ export const javaTrainings: TrainingProgram[] = [
   {
     id: "java-full-stack",
     slug: "java-full-stack",
-
     title: "Java Full Stack Development",
-
     category: "Full Stack",
-
     description:
       "Master Java backend development with Spring Boot, Hibernate, MySQL and React while building production-ready enterprise applications.",
-
     image: "/images/training/java-full-stack.webp",
-
     duration: "24 Weeks",
-
     level: "Beginner",
-
     mode: "Online",
-
     technologies: [
       "Java",
       "Spring Boot",
@@ -29,7 +21,71 @@ export const javaTrainings: TrainingProgram[] = [
       "Git",
       "Docker",
     ],
-
     featured: true,
+  },
+  {
+    id: "java-backend-microservices",
+    slug: "java-backend-microservices",
+    title: "Java Microservices & Cloud-Native Architecture",
+    category: "Software Engineering",
+    description:
+      "Build distributed, fault-tolerant microservices architectures using Spring Cloud, Apache Kafka, Redis, and Kubernetes for enterprise-scale software.",
+    image: "/images/training/java-backend-microservices.webp",
+    duration: "16 Weeks",
+    level: "Advanced",
+    mode: "Online",
+    technologies: [
+      "Java 17/21",
+      "Spring Boot 3",
+      "Spring Cloud",
+      "Apache Kafka",
+      "Redis",
+      "Docker",
+      "PostgreSQL",
+    ],
+    featured: true,
+  },
+  {
+    id: "java-dsa-interview-prep",
+    slug: "java-dsa-interview-prep",
+    title: "Java Data Structures, Algorithms & System Design",
+    category: "Software Engineering",
+    description:
+      "Comprehensive interview preparation covering problem-solving with Java 8+, core data structures, algorithmic optimization, and high-level system design.",
+    image: "/images/training/java-dsa-interview-prep.webp",
+    duration: "12 Weeks",
+    level: "Intermediate",
+    mode: "Online",
+    technologies: [
+      "Java 8+",
+      "Data Structures",
+      "Algorithms",
+      "System Design",
+      "LeetCode Prep",
+      "JUnit",
+    ],
+    featured: false,
+  },
+  {
+    id: "enterprise-java-spring-framework",
+    slug: "enterprise-java-spring-framework",
+    title: "Enterprise Java & Spring Boot Masterclass",
+    category: "Software Engineering",
+    description:
+      "Master core Java concepts, multithreading, concurrency, Spring Security, RESTful Web Services, JPA, and automated unit testing.",
+    image: "/images/training/enterprise-java-spring-framework.webp",
+    duration: "16 Weeks",
+    level: "Intermediate",
+    mode: "Online",
+    technologies: [
+      "Java 8+",
+      "Spring Boot",
+      "Spring Security",
+      "JPA / Hibernate",
+      "REST APIs",
+      "Maven",
+      "JUnit 5",
+    ],
+    featured: false,
   },
 ];

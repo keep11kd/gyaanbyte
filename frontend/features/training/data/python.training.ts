@@ -4,22 +4,14 @@ export const pythonTrainings: TrainingProgram[] = [
   {
     id: "python-full-stack",
     slug: "python-full-stack",
-
     title: "Python Full Stack Development",
-
     category: "Full Stack",
-
     description:
       "Learn Python, Django, FastAPI, PostgreSQL and React to build scalable web applications from frontend to backend.",
-
     image: "/images/training/python-full-stack.webp",
-
     duration: "24 Weeks",
-
     level: "Beginner",
-
     mode: "Online",
-
     technologies: [
       "Python",
       "Django",
@@ -29,7 +21,71 @@ export const pythonTrainings: TrainingProgram[] = [
       "Git",
       "Docker",
     ],
-
     featured: true,
+  },
+  {
+    id: "python-backend-fastapi",
+    slug: "python-backend-fastapi",
+    title: "Python Backend Engineering with FastAPI & Microservices",
+    category: "Software Engineering",
+    description:
+      "Master asynchronous Python development, high-performance REST & GraphQL APIs with FastAPI, SQLAlchemy, Redis caching, and microservices design patterns.",
+    image: "/images/training/python-backend-fastapi.webp",
+    duration: "16 Weeks",
+    level: "Intermediate",
+    mode: "Online",
+    technologies: [
+      "Python",
+      "FastAPI",
+      "AsyncIO",
+      "SQLAlchemy",
+      "Pydantic",
+      "Redis",
+      "Docker",
+    ],
+    featured: true,
+  },
+  {
+    id: "python-programming-dsa",
+    slug: "python-programming-dsa",
+    title: "Core Python Programming & Algorithmic Problem Solving",
+    category: "Programming",
+    description:
+      "Build a rock-solid foundation in Python syntax, OOP, object-oriented design, data structures, algorithms, and technical interview preparation.",
+    image: "/images/training/python-programming-dsa.webp",
+    duration: "12 Weeks",
+    level: "Beginner",
+    mode: "Online",
+    technologies: [
+      "Python 3",
+      "Data Structures",
+      "Algorithms",
+      "OOPs",
+      "PyTest",
+      "Git",
+    ],
+    featured: false,
+  },
+  {
+    id: "django-enterprise-development",
+    slug: "django-enterprise-development",
+    title: "Enterprise Web Development with Django & DRF",
+    category: "Software Engineering",
+    description:
+      "Build enterprise-grade SaaS platforms using Django Framework, Django REST Framework (DRF), Celery asynchronous tasks, PostgreSQL, and AWS deployment.",
+    image: "/images/training/django-enterprise-development.webp",
+    duration: "16 Weeks",
+    level: "Intermediate",
+    mode: "Online",
+    technologies: [
+      "Python",
+      "Django",
+      "Django REST Framework",
+      "Celery",
+      "PostgreSQL",
+      "Redis",
+      "AWS",
+    ],
+    featured: false,
   },
 ];

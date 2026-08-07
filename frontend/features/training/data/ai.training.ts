@@ -1,1 +1,92 @@
-export {};
+import type { TrainingProgram } from "../types";
+
+export const aiTrainings: TrainingProgram[] = [
+  {
+    id: "ai-machine-learning",
+    slug: "ai-machine-learning",
+    title: "Artificial Intelligence & Machine Learning",
+    category: "Artificial Intelligence",
+    description:
+      "Learn Artificial Intelligence and Machine Learning by building real-world applications using Python, TensorFlow, OpenCV, and modern AI frameworks.",
+    image: "/images/training/ai-machine-learning.webp",
+    duration: "24 Weeks",
+    level: "Intermediate",
+    mode: "Online",
+    technologies: [
+      "Python",
+      "NumPy",
+      "Pandas",
+      "Scikit-Learn",
+      "TensorFlow",
+      "OpenCV",
+      "LLMs",
+    ],
+    featured: true,
+  },
+  {
+    id: "generative-ai-langchain",
+    slug: "generative-ai-langchain",
+    title: "Generative AI & LLM Application Development",
+    category: "Artificial Intelligence",
+    description:
+      "Master Large Language Models (LLMs), RAG architectures, prompt engineering, and vector databases to build autonomous AI agents using LangChain and LlamaIndex.",
+    image: "/images/training/generative-ai-langchain.webp",
+    duration: "12 Weeks",
+    level: "Advanced",
+    mode: "Online",
+    technologies: [
+      "Python",
+      "OpenAI API",
+      "LangChain",
+      "LlamaIndex",
+      "Pinecone",
+      "ChromaDB",
+      "Hugging Face",
+    ],
+    featured: true,
+  },
+  {
+    id: "deep-learning-computer-vision",
+    slug: "deep-learning-computer-vision",
+    title: "Deep Learning & Computer Vision Specialization",
+    category: "Artificial Intelligence",
+    description:
+      "Dive deep into neural networks, object detection, segmentation, and generative models using PyTorch, YOLO, and OpenCV for production vision systems.",
+    image: "/images/training/deep-learning-computer-vision.webp",
+    duration: "16 Weeks",
+    level: "Intermediate",
+    mode: "Online",
+    technologies: [
+      "Python",
+      "PyTorch",
+      "OpenCV",
+      "YOLOv8",
+      "CNNs",
+      "GANs",
+      "TorchVision",
+    ],
+    featured: false,
+  },
+  {
+    id: "data-science-python",
+    slug: "data-science-python",
+    title: "Data Science & Applied Analytics with Python",
+    category: "Artificial Intelligence",
+    description:
+      "Master statistical modeling, data visualization, feature engineering, and exploratory data analysis to solve complex business intelligence challenges.",
+    image: "/images/training/data-science-python.webp",
+    duration: "16 Weeks",
+    level: "Beginner",
+    mode: "Online",
+    technologies: [
+      "Python",
+      "SQL",
+      "Pandas",
+      "NumPy",
+      "Matplotlib",
+      "Seaborn",
+      "PowerBI",
+    ],
+    featured: false,
+  },
+];

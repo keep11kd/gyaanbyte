@@ -1,1 +1,92 @@
-export {};
+import type { TrainingProgram } from "../types";
+
+export const cyberTrainings: TrainingProgram[] = [
+  {
+    id: "cyber-security",
+    slug: "cyber-security",
+    title: "Cyber Security & Ethical Hacking",
+    category: "Cyber Security",
+    description:
+      "Build practical cyber security skills by learning networking, Linux, penetration testing, vulnerability assessment and ethical hacking using industry-standard tools.",
+    image: "/images/training/cyber-security.webp",
+    duration: "24 Weeks",
+    level: "Intermediate",
+    mode: "Online",
+    technologies: [
+      "Linux",
+      "Networking",
+      "Kali Linux",
+      "Burp Suite",
+      "OWASP",
+      "Wireshark",
+      "Python",
+    ],
+    featured: true,
+  },
+  {
+    id: "soc-analyst-siem",
+    slug: "soc-analyst-siem",
+    title: "SOC Analyst & SIEM Operations",
+    category: "Cyber Security",
+    description:
+      "Master Security Operations Center (SOC) fundamentals, threat hunting, incident response, log analysis, and SIEM tool deployment for enterprise defense.",
+    image: "/images/training/soc-analyst-siem.webp",
+    duration: "16 Weeks",
+    level: "Beginner",
+    mode: "Online",
+    technologies: [
+      "Splunk",
+      "Elastic SIEM",
+      "Wireshark",
+      "Log Analysis",
+      "Incident Response",
+      "YARA",
+      "MITRE ATT&CK",
+    ],
+    featured: false,
+  },
+  {
+    id: "cloud-security-devsecops",
+    slug: "cloud-security-devsecops",
+    title: "Cloud Security & DevSecOps Engineering",
+    category: "Cyber Security",
+    description:
+      "Integrate security automation into CI/CD pipelines, secure cloud infrastructure across AWS & Azure, and enforce zero-trust identity and compliance policies.",
+    image: "/images/training/cloud-security-devsecops.webp",
+    duration: "16 Weeks",
+    level: "Advanced",
+    mode: "Online",
+    technologies: [
+      "AWS Security",
+      "Docker",
+      "Kubernetes",
+      "SonarQube",
+      "Trivy",
+      "Terraform",
+      "IAM",
+    ],
+    featured: true,
+  },
+  {
+    id: "web-app-penetration-testing",
+    slug: "web-app-penetration-testing",
+    title: "Web Application Penetration Testing",
+    category: "Cyber Security",
+    description:
+      "Specialized hands-on course covering OWASP Top 10 vulnerabilities, API security assessments, privilege escalation, and modern web exploitation techniques.",
+    image: "/images/training/web-app-penetration-testing.webp",
+    duration: "12 Weeks",
+    level: "Intermediate",
+    mode: "Online",
+    technologies: [
+      "Burp Suite Pro",
+      "OWASP ZAP",
+      "Postman",
+      "SQLMap",
+      "Metasploit",
+      "JavaScript",
+      "Python Scripting",
+    ],
+    featured: false,
+  },
+];

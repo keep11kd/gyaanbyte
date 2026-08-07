@@ -1,1 +1,92 @@
-export {};
+import type { TrainingProgram } from "../types";
+
+export const devopsTrainings: TrainingProgram[] = [
+  {
+    id: "cloud-devops",
+    slug: "cloud-devops",
+    title: "Cloud & DevOps Engineering",
+    category: "Cloud & DevOps",
+    description:
+      "Learn modern cloud infrastructure, CI/CD pipelines, containerization and DevOps practices using industry-standard tools and real-world deployment workflows.",
+    image: "/images/training/cloud-devops.webp",
+    duration: "24 Weeks",
+    level: "Advanced",
+    mode: "Online",
+    technologies: [
+      "Linux",
+      "Docker",
+      "Kubernetes",
+      "Jenkins",
+      "GitHub Actions",
+      "AWS",
+      "Terraform",
+    ],
+    featured: true,
+  },
+  {
+    id: "aws-solutions-architect",
+    slug: "aws-solutions-architect",
+    title: "AWS Cloud Solutions Architect",
+    category: "Cloud & DevOps",
+    description:
+      "Master Amazon Web Services architecture, elastic infrastructure, high availability, serverless services, and cloud cost optimization for enterprise deployments.",
+    image: "/images/training/aws-solutions-architect.webp",
+    duration: "16 Weeks",
+    level: "Intermediate",
+    mode: "Online",
+    technologies: [
+      "AWS EC2",
+      "AWS S3",
+      "Lambda",
+      "CloudFormation",
+      "VPC",
+      "IAM",
+      "DynamoDB",
+    ],
+    featured: true,
+  },
+  {
+    id: "kubernetes-container-orchestration",
+    slug: "kubernetes-container-orchestration",
+    title: "Kubernetes & Microservices Administration",
+    category: "Cloud & DevOps",
+    description:
+      "Deep dive into container orchestration, Helm charts, ingress controllers, cluster security, Service Mesh with Istio, and GitOps workflows.",
+    image: "/images/training/kubernetes-container-orchestration.webp",
+    duration: "12 Weeks",
+    level: "Advanced",
+    mode: "Online",
+    technologies: [
+      "Kubernetes",
+      "Docker",
+      "Helm",
+      "ArgoCD",
+      "Istio",
+      "Prometheus",
+      "Grafana",
+    ],
+    featured: false,
+  },
+  {
+    id: "site-reliability-engineering-sre",
+    slug: "site-reliability-engineering-sre",
+    title: "Site Reliability Engineering (SRE)",
+    category: "Cloud & DevOps",
+    description:
+      "Learn SRE fundamentals including observability, alerting, SLIs/SLOs, incident management, chaos engineering, and infrastructure automation.",
+    image: "/images/training/site-reliability-engineering-sre.webp",
+    duration: "16 Weeks",
+    level: "Intermediate",
+    mode: "Online",
+    technologies: [
+      "Prometheus",
+      "Grafana",
+      "Python",
+      "Ansible",
+      "ELK Stack",
+      "PagerDuty",
+      "OpenTelemetry",
+    ],
+    featured: false,
+  },
+];

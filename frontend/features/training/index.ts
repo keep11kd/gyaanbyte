@@ -1,19 +1,6 @@
-import { javaTrainings } from "./java.training";
-import { pythonTrainings } from "./python.training";
-import { aiTrainings } from "./ai.training";
-import { cyberTrainings } from "./cyber.training";
-import { devopsTrainings } from "./devops.training";
+export { default as TrainingPageView } from "./TrainingPageView";
+export { default as TrainingDetailsView } from "./TrainingDetailsView";
 
-export { javaTrainings } from "./java.training";
-export { pythonTrainings } from "./python.training";
-export { aiTrainings } from "./ai.training";
-export { cyberTrainings } from "./cyber.training";
-export { devopsTrainings } from "./devops.training";
-
-export const trainings = [
-  ...javaTrainings,
-  ...pythonTrainings,
-  ...aiTrainings,
-  ...cyberTrainings,
-  ...devopsTrainings,
-];
+export * from "./sections";
+export * from "./data";
+export * from "./types";

@@ -1,0 +1,88 @@
+import type { Testimonial } from "../types";
+
+export const testimonials: readonly Testimonial[] = [
+  {
+    id: "student-1",
+    name: "Aman Sharma",
+    role: "B.Tech CSE Student",
+    organization: "AKTU University",
+    avatar: "/images/testimonials/student-1.webp",
+    rating: 5,
+    featured: true,
+    verified: true,
+    category: "Academic Projects",
+    message:
+      "The complete project package, documentation and support helped me successfully complete my final year project.",
+    linkedin: "https://linkedin.com/in/amansharma",
+  },
+  {
+    id: "student-2",
+    name: "Priya Singh",
+    role: "MCA Student",
+    organization: "Lucknow University",
+    avatar: "/images/testimonials/student-2.webp",
+    rating: 5,
+    featured: true,
+    verified: true,
+    category: "Students",
+    message:
+      "The training was practical and industry-focused. Every concept was explained with real projects.",
+    linkedin: "https://linkedin.com/in/priyasingh",
+  },
+  {
+    id: "student-3",
+    name: "Rahul Verma",
+    role: "Software Engineer",
+    organization: "HCL Technologies",
+    avatar: "/images/testimonials/student-3.webp",
+    rating: 5,
+    featured: true,
+    verified: true,
+    category: "Professionals",
+    message:
+      "Excellent guidance for interview preparation and enterprise development. Highly recommended.",
+    linkedin: "https://linkedin.com/in/rahulverma",
+  },
+  {
+    id: "student-4",
+    name: "Ananya Gupta",
+    role: "Backend Engineer Intern",
+    organization: "IBM",
+    avatar: "/images/testimonials/student-4.webp",
+    rating: 5,
+    featured: false,
+    verified: true,
+    category: "Professionals",
+    message:
+      "Building microservices with Spring Boot and Docker gave me the technical confidence to clear my technical rounds smoothly.",
+    linkedin: "https://linkedin.com/in/ananyagupta",
+  },
+  {
+    id: "student-5",
+    name: "Saurabh Mishra",
+    role: "DevOps Engineer",
+    organization: "TCS",
+    avatar: "/images/testimonials/student-5.webp",
+    rating: 5,
+    featured: false,
+    verified: true,
+    category: "Professionals",
+    message:
+      "Hands-on exercises with Kubernetes, CI/CD pipelines, and Terraform made the learning curve seamless.",
+    linkedin: "https://linkedin.com/in/saurabhmishra",
+  },
+  {
+    id: "student-6",
+    name: "Neha Rastogi",
+    role: "Full Stack Developer",
+    organization: "Wipro",
+    avatar: "/images/testimonials/student-6.webp",
+    rating: 5,
+    featured: false,
+    verified: true,
+    category: "Professionals",
+    message:
+      "The mentorship and practical full-stack projects provided the exact boost needed for my career transition.",
+    linkedin: "https://linkedin.com/in/neharastogi",
+  },
+];

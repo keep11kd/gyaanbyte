@@ -5,6 +5,7 @@
 export const TRAINING_CATEGORIES = [
   "All",
   "Programming",
+  "Software Engineering",
   "Full Stack",
   "Artificial Intelligence",
   "Data Science",

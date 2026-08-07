@@ -1,7 +1,10 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 @import "shadcn/tailwind.css";
-
+/* ⬇️ YE LINES ADD KAREIN ⬇️ */
+@source "../features";
+@source "../components";
+@source "../app";
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
