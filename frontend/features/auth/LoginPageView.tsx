@@ -1,68 +1,109 @@
 "use client";
 
-import { useState } from "react";
-import { useRouter, useSearchParams } from "next/navigation";
+import {
+  useRouter,
+  useSearchParams,
+} from "next/navigation";
+
+import { useEffect } from "react";
+
 import LoginSection from "./sections/LoginSection";
-import type { LoginFormValues, SocialProviderId } from "./types";
+import { useLogin } from "./hooks/useLogin";
+import { useAuth } from "./hooks/useAuth";
+
+import type {
+  LoginFormValues,
+  SocialProviderId,
+} from "./types";
+
+/**
+ * Validates the callback URL to prevent open redirect vulnerabilities.
+ *
+ * Only internal relative paths are allowed.
+ */
+function getSafeCallbackUrl(
+  paramUrl: string | null
+): string {
+  if (!paramUrl) {
+    return "/dashboard";
+  }
+
+  if (
+    paramUrl.startsWith("/") &&
+    !paramUrl.startsWith("//")
+  ) {
+    return paramUrl;
+  }
+
+  return "/dashboard";
+}
 
 export default function LoginPageView() {
   const router = useRouter();
   const searchParams = useSearchParams();
+const {
+  isAuthenticated,
+  isLoading: authLoading,
+} = useAuth();
 
-  // Extract dynamic redirect URL if present (defaults to dashboard)
-  const callbackUrl = searchParams.get("callbackUrl") || "/dashboard";
+  const callbackUrl = getSafeCallbackUrl(
+    searchParams.get("callbackUrl")
+  );
 
-  // Page View State
-  const [isLoading, setIsLoading] = useState<boolean>(false);
-  const [loadingProviderId, setLoadingProviderId] = useState<SocialProviderId | null>(null);
-  const [serverError, setServerError] = useState<string | null>(null);
+  useEffect(() => {
+  if (authLoading) {
+    return;
+  }
+
+  if (isAuthenticated) {
+    router.replace(callbackUrl);
+  }
+}, [
+  authLoading,
+  isAuthenticated,
+  callbackUrl,
+  router,
+]);
+
+  const {
+    login,
+    isLoading,
+    error: serverError,
+    resetError,
+  } = useLogin();
 
   /**
-   * Primary Password Login Handler
+   * Primary password login.
    */
-  const handleLoginSubmit = async (values: LoginFormValues) => {
-    setIsLoading(true);
-    setServerError(null);
+  const handleLoginSubmit = async (
+    values: LoginFormValues
+  ) => {
+    resetError();
 
     try {
-      // Execute authentication service call (e.g. authService.login(values))
-      // Example simulated delay:
-      await new Promise((resolve) => setTimeout(resolve, 1200));
+      await login(values);
 
-      // Redirect user upon success
+      // Refresh the Next.js router state.
+      router.refresh();
+
+      // Redirect after successful authentication.
       router.push(callbackUrl);
-    } catch (error: unknown) {
-      const errorMessage =
-        error instanceof Error
-          ? error.message
-          : "Invalid email or password. Please verify your credentials.";
-
-      setServerError(errorMessage);
-    } finally {
-      setIsLoading(false);
+    } catch {
+      // useLogin() already manages the error state.
     }
   };
 
   /**
-   * OAuth Social Login Handler
+   * Social login.
+   *
+   * OAuth integration will be implemented later.
    */
-  const handleSocialLogin = async (providerId: SocialProviderId) => {
-    setLoadingProviderId(providerId);
-    setServerError(null);
-
-    try {
-      // Execute provider OAuth redirect (e.g. signIn(providerId, { callbackUrl }))
-      // Example simulated delay:
-      await new Promise((resolve) => setTimeout(resolve, 1000));
-    } catch (error: unknown) {
-      const errorMessage =
-        error instanceof Error
-          ? error.message
-          : `Failed to authenticate with ${providerId}. Please try again.`;
-
-      setServerError(errorMessage);
-      setLoadingProviderId(null);
-    }
+  const handleSocialLogin = (
+    providerId: SocialProviderId
+  ) => {
+    console.log(
+      `Social login requested: ${providerId}`
+    );
   };
 
   return (
@@ -70,7 +111,6 @@ export default function LoginPageView() {
       onLoginSubmit={handleLoginSubmit}
       onSocialLogin={handleSocialLogin}
       isLoading={isLoading}
-      loadingProviderId={loadingProviderId}
       serverError={serverError}
     />
   );

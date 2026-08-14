@@ -1,8 +1,11 @@
 import type { Metadata } from "next";
+
 import "./globals.css";
 
 import { Navbar } from "@/components/navigation/Navbar";
 import Footer from "@/components/layout/Footer";
+
+import { AuthProvider } from "@/features/auth/context/AuthProvider";
 
 export const metadata: Metadata = {
   title: "GyaanByte",
@@ -17,11 +20,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="bg-white text-slate-900 antialiased">
-        <Navbar />
+        <AuthProvider>
+          <Navbar />
 
-        <main>{children}</main>
+          <main>{children}</main>
 
-        <Footer />
+          <Footer />
+        </AuthProvider>
       </body>
     </html>
   );
